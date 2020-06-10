@@ -1,0 +1,87 @@
+<html><head>
+	<style type="text/css">
+	@import url.('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,400,700&display=swap');
+
+
+	#title{
+		font-size: 45pt;
+		text-align: center;
+
+	}
+
+	body{
+		background-color: #eee;
+		margin: 0px;
+		padding: 0px;
+		font-family: 'IBM Plex Sans', sans-serif;
+	}
+	h1 {
+		color: #FFFFFF;
+		text-align: center;
+		font-weight: 700;
+	}
+	#header {
+		height: 100px;
+		width: 100%;
+		background-color: #587bab;
+		margin: 0px;
+		padding: 0px;
+	}
+	.box {
+		width: 100px;
+		height: 20px;
+	}
+	.info {
+		visibility: hidden;
+		text-indent: 2px;
+		margin-left: 10px;
+		width: 600px;
+		
+	}
+
+</style>
+</head><body class="vsc-initialized"><script type="text/javascript">
+	function  myFunction(){
+		document.getElementById('test').style.visibility = 'visible';
+		var money = document.getElementById('value').value;
+		var visitors = money/26.888451;
+		var OD = visitors*.0048;
+		var OD_m = OD* .978;
+		var OD_a = ((OD_m*.56) *.77) *.47
+		var OD_save =  OD_a * 17083
+		var lives_saved = OD * .0383
+		document.getElementById("visit").innerHTML = visitors - visitors%1;
+		document.getElementById("od").innerHTML = OD - OD%1;
+		document.getElementById("od_m").innerHTML = OD_m - OD_m%1;
+		document.getElementById("od_a").innerHTML = OD_a - OD_a%1;
+		document.getElementById("od_sav").innerHTML =  OD_save - OD_save%1;
+		document.getElementById("od_prev").innerHTML =  lives_saved - lives_saved%1;
+
+	}
+</script>
+
+
+
+	<div id="header">
+		<h1 id="title">
+			Injection Site Calculator
+		</h1>
+	</div>
+	<br>
+	<br>
+	<p> Please enter the amount of money you would like your city to spend on a safe injection site, and click the button.</p>
+	<input class="box" id="value">
+	</input>
+	<button id="button" onclick="myFunction()">Calculate</button>
+	<br>
+	<br>
+	<div class="info" id="test">
+		<p> It is estimated that <b id="visit"></b> people will visit this facility annually.</p>
+		<p> It is estimated that <b id="od"></b> overdoses will occur at the facility per year.</p>
+		<p> It is estimated that <b id="od_m"></b> overdoses will be managed without further clinical care.</p>
+		<p> It is estimated that <b id="od_a"></b> averted hospitalizations for non-fatal overdoses will occur.</p>
+		<p> It is estimated that <b>$</b><b id="od_sav"></b> will be saved from averted hospitalization costs.</p>
+		<p> It is estimated that <b id="od_prev"></b> deaths will be averted by the safe injection site.</p>
+	</div>
+
+</body></html>

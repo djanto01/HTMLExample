@@ -1,0 +1,204 @@
+<html><head>
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,400,700&amp;display=swap" rel="stylesheet"> 
+	</head><body class="vsc-initialized"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$(".f2").click(function() {
+				$(this).fadeOut();
+				$(this).next('.f1').delay(375).fadeIn();
+			});
+			$(".f1").click(function() {
+				$(this).fadeOut();
+				$(this).prev('.f2').delay(375).fadeIn();
+			});
+		});
+	</script>
+	<style type="text/css">
+	@import url.('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,400,700&display=swap');
+
+	#title{
+		font-size: 45pt;
+		text-align: center;
+		font-weight: 700;
+	}
+	body{
+		background-color: #eee;
+		margin: 0px;
+		padding: 0px;
+		font-family: 'IBM Plex Sans', sans-serif;
+	}
+	h1 {
+		color: #FFFFFF;
+	}
+	#button {
+		position: absolute;
+		background-color: #bbbbbb;
+		cursor: pointer;
+		min-width: 20%;
+		color: #0B0C10;
+		padding: 5px 3px;
+		left: 40%;
+		text-align: center;
+		border-radius: 20px;
+
+	}
+	#button:hover {
+		opacity: .8;
+	}
+	.text {
+		font-size: 45px;
+		text-align: center;
+		font-weight: 400;
+
+	}
+	.f1:hover {
+		cursor: pointer;
+		opacity: .8;
+	}
+	.f2 {
+		position: relative;
+		display: none;
+		width: 40%;
+		background-color: #88bbeb;
+		border-radius: 20px;
+	}
+	.f1 {
+		padding: 0px;
+		min-height: 150px;
+		position: relative;
+		width: 40%;
+		border-radius: 20px;
+		background-color: #bbbbbb;
+	}
+	.left {
+		left: 5%;
+	}
+	.right {
+		left: 55%;
+	}
+	#header {
+		height: 100px;
+		width: 100%;
+		background-color: #587bab;
+		margin: 0px;
+		padding: 0px;
+	}
+	.divider {
+		bottom: 50px;
+		line-height: 1400%;
+	}
+	.info_Header {
+		text-align: center;
+		font-size: 15pt;
+		font-weight: 400;
+		
+	}
+	hr {
+		size: 30px;
+		height: 8px;
+		border: 0px;
+		background-color: #000000;
+		width: 80%;
+		color: #000000;
+	}
+	#subtext{
+		font-size: 20px;
+		font-family: 'IBM Plex Sans', sans-serif;
+	}
+	.list_item{
+		font-size: 30px;
+		font-family: 'IBM Plex Sans', sans-serif;
+	}
+	#img1 {
+		position: absolute;
+		left: 5%;
+		width: 25%;
+		height: 25%;
+	}
+	#img2{
+		position: absolute;
+		left: 70%;
+		width: 25%;
+		height: 25%
+	}
+	.image {
+		border-radius: 20px;
+	}
+
+</style>
+
+
+
+	<div id="header">
+		<h1 id="title">
+			Safe Injection Sites 
+		</h1>
+	</div>
+	<br>
+	<div>
+	<a href="Project2.HTML">
+		<div id="button">
+			<p>Click Here For An Interactive Calculator</p>
+		</div>
+	</a>
+	<img class="image" id="img1" src="safe-injection-site.jpg">
+	<img class="image" id="img2" src="0122_safe-injection.jpg">
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<h5 class="info_Header"> Click each heading for more information on each topic.</h5>
+		<hr>
+
+
+
+
+		<div class="f2 left">
+			<p class="text" id="list_item">Safe injection sites are locations where people who are addicted to harmful substances can go and have access to clean needles and administration under medical professionals.</p>
+		</div>
+		<div class="f1 left">	
+			<p class="text"> What is it? </p>
+		</div>
+
+
+
+		<div class="f2 right">
+			<p class="text" id="list_item">  They allow for the removal of needles deaths from drug overdoses and prevent deadly disease transferring due to the removal of unclean needles. They additionally may have econimocally benifits if they are implemented in heavy drug use areas. </p>
+		</div>
+		<div class="f1 right">
+			<p class="text"> What are their purpose? </p>
+		</div>
+
+
+
+
+		<div class="f2 left ">
+			<p class="text" id="list_item"> Speak to local/city law makers on their stance about the topic and what you can do to make it happen faster. If a physical meeting isn't possible, send letters or write emails.</p>
+		</div>
+		<div class="f1 left ">	
+			<p class="text"> What can I do to help make this become a reality? </p>
+		</div>
+
+
+
+		<div class="f2 right ">
+			<p class="text" id="subtext"> As of July of 2018, the proposed sites were located in: </p>
+			<ul>
+				<li class="list_item">New York City</li>
+				<li class="list_item">Philadelphia</li>
+				<li class="list_item">Boston</li>
+				<li class="list_item">San Francisco</li>
+				<li class="list_item">Seattle</li>
+				<li class="list_item">Denver</li>
+				<li class="list_item">Vermont</li>
+				<li class="list_item">Deleware</li>
+			</ul>
+		</div>
+		<div class="f1 right ">
+			<p class="text"> Who's trying to impliment them? </p>
+		</div>
+
+
+	
+</div></body></html>
